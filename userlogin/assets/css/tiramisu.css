@@ -1,0 +1,270 @@
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 50px;
+}
+
+nav .brand-logo {
+	line-height: 50px;
+	margin-left: 20px
+}
+
+nav .menukanan {
+	line-height: 50px
+}
+
+.parallax-container {
+      height: 600px !important;
+      top: -350px !important;
+    }
+
+.minusatas {
+	margin-top: -350px !important;
+	background: #f5f5f5 !important;
+}
+
+.badankanan {
+	background: white;
+	width: 100%; 
+	border-radius: 5px;
+}
+
+.badankanannaik {
+	margin-top: -240px
+}
+
+.backkosong {
+	background: none;
+}
+
+.tabicon {
+	display: inline-flex !important;
+    vertical-align: middle !important;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.iconnavbar {
+	line-height: 50px !important;
+}
+
+.button-icon-only {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 10px;
+}
+
+.button-icon-only .iconnya {
+	margin-right: 0;
+}
+
+.menuicon {
+	display: inline-flex;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.collection .collection-item {
+	background: none;
+	border-bottom: 1px solid #dadada;	
+}
+
+.collection {
+	border: none;
+	font-size: 20px;
+}
+
+.collection .collection-item.active {
+	border-radius: 5px;
+}
+
+.collection a.collection-item {
+	color: #64808d;
+}
+
+.collection a.collection-item:not(.active):hover {
+	border-radius: 5px;
+}
+
+.container-anime {
+        width: 100%;
+    height: 120px;
+    margin-top: -160px;
+    margin-bottom: 40px;
+    padding: 5px;
+}
+
+.img-profile {
+	border: 5px solid white;
+	float: left;
+	margin-right: 12px;
+}
+
+.text-title-profile {
+	color: white;
+	font-size: 28px;
+	margin-left: 20px;
+	margin-top: 0px;
+	    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.thumbanimelist {
+	float: left;
+	margin-right: 10px;
+}
+
+.judulanimelist {
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.subjudulanimelist {
+	font-size: 12px;
+}
+
+.collection .collection-item.active {
+	background: #e53935;
+	color: white;
+}
+
+.text-subtitle-profile {
+	color: white;
+	font-size: 18px;
+	margin-left: 20px;
+	margin-top: 0px;
+}
+
+nav ul a {
+	height: 50px;
+    line-height: 50px;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+	height: 50px;
+    line-height: 50px;
+}
+
+.tiramisu {
+	background: #4b30b8;
+}
+
+body {
+	background: #f5f5f5 !important
+}
+
+.table-responsive {
+    overflow-x: auto;
+    min-height: 0.01%;
+}
+
+table>thead>tr, table>tbody>tr {
+	font-size: 15px;
+	line-height: 17px;
+}
+
+.second-line {
+	font-size: 12px
+}
+
+td {
+	padding: 4px 5px;
+	z-index: 1;
+}
+
+.submitter {
+	background: #4b30b8;
+	padding: 5px;
+	border-radius: 4px;
+	color: white;	
+}
+
+a {
+	color: #4b30b8;
+}
+
+@media screen and (max-width: 991px){
+	.table-responsive {
+	    width: 100%;
+	    overflow-y: hidden;
+	    -ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+
+	table.responsive-table tbody {
+	    display: block;
+	    width: auto;
+	    position: relative;
+	    overflow-x: auto;
+	    white-space: nowrap;
+	}
+
+	th.judul {
+		min-width: 475px;
+	}
+
+	th.tanggal {
+		min-width: 144px;
+	}
+}
+
+td.flag {
+	padding: 0;
+}
+
+img.flag {
+	height: 45px;
+    margin-bottom: -5px;
+}
+
+.purplePI {
+	background: #4b30b8;
+	color: white !important;
+}
+
+.purplePI > a {
+	color: white !important;
+}
+
+.purplePI:focus {
+	background: #5c42c7;
+}
+
+.purplePI:hover {
+	background: #5c42c7;
+}
+
+.vert-align {
+	vertical-align: top;
+}
+
+.dl-link > td {
+  padding: 0;
+}
+
+.dl-link > td > p {
+	margin-top: -11px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    z-index: 99999;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #4b30b8;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+	color: #4b30b8;
+}
+
+.backupload {
+	background: #fafafa url(../img/backupload.png) repeat-x top left !important;
+}
+
+.backnotif {
+	background: #fafafa url(../img/backnotif.png) repeat-x top left !important;
+}
+
+.backlogin {
+	background: #fafafa url(../img/backlogin.png) repeat-x top left !important;
+}

@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Raw Index</title>
+    <!--Import Google Icon Font-->
+    <link href="{% static 'css/materialize-icon.css' %}" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="{% static 'css/tiramisu.css' %}" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            {% if user.full_name is None %}
+            <li><a href="{% url 'userlogin:login' %}">Masuk</a>
+            </li>
+            <li><a href="#!">Daftar</a>
+            </li>
+            {% else %}
+            <li><a href="{% url 'userlogin:logout' %}">Logout</a>
+            </li>
+            {% endif %}
+        </ul>
+        <nav class="tiramisu">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">[月光]</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="sass.html">Tentang Kami</a>
+                    </li>
+                    <li><a href="badges.html">Peraturan</a>
+                    </li>
+                    <li><a href="collapsible.html">Bantuan</a>
+                    </li>
+                    <li><a href="collapsible.html">Ruang Obrol</a>
+                    </li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">RSS</a>
+                    </li>
+                    <li><a href="badges.html">API</a>
+                    </li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">account_circle</i> {{user.full_name}}</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="parallax-container parallax-tiramisu" style="z-index: -3;">
+            <div class="parallax"><img src="img/back.jpg">
+            </div>
+        </div>
+        <div class="section white minusatas">
+            <div class="row">
+
+                <div class="col s12 xl12 l12" style="padding: 30px">
+                    <div class="badankanan z-depth-2 badankanannaik">
+                        <div class="row">
+                            <div id="test2" class="col s12">
+                                <form method="get" action="a.html" class="col s12" style="padding: 0;">
+                                    <div class="row" style="margin-bottom: 0px">
+                                        <div class="input-field col s12 xl3 l3">
+                                            <select>
+                                                <option value="r">-- Semua Kategori --</option>
+                                                <option value="1">Anime</option>
+                                                <option value="1">Anime Raw</option>
+                                                <option value="1">Live Action</option>
+                                                <option value="1">Live Action Raw</option>
+                                                <option value="1">Live Action PV/Idol</option>
+                                                <option value="1">Anime Music Video</option>
+                                                <option value="1">Buku</option>
+                                                <option value="1">Buku Raw</option>
+                                                <option value="1">Audio</option>
+                                                <option value="1">Gambar</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s12 xl9 l9">
+                                            <button class="btn waves-effect waves-light" type="submit" name="action" style="display:none"></button>
+                                            <i class="material-icons prefix" style="top: 9px;right: 0;">search</i>
+                                            <input id="icon_prefix" type="text" class="cari validate" style="margin-bottom: 0px;margin-left: 0px" placeholder="Cari berkas...">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="test1" class="col s12">
+                                Content Heree
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination" style="text-align: center;">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a>
+                        </li>
+                        <li class="purplePI"><a href="#!">1</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!">2</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!">3</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!">4</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!">5</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-action-btn">
+            <a href="#tambah" data-position="left" data-delay="50" data-tooltip="Tambah berkas" class="btn-floating btn-large purplePI waves-effect waves-light tooltipped">
+                <i class="large material-icons">add</i>
+            </a>
+        </div>
+
+        <!-- MODAL -->
+        <!-- Modal Structure -->
+        <div id="login" class="backlogin modal" style="max-width: 550px;">
+            <div class="modal-content">
+                <h4>Masuk</h4>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Username</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Kata Sandi</label>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn waves-effect purplePI waves-light" type="submit" name="action">Masuk
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+
+
+        <div id="tambah" class="backupload modal modal-fixed-footer">
+            <div class="modal-content">
+              <h5>Tambah berkas</h5>
+              <form class="col s12">
+                            <div class="row">
+                            <div class="input-field col s4">
+                                    <select>
+                                      <option value="" disabled selected>Kategori</option>
+                                      <option value="1">Option 1</option>
+                                      <option value="2">Option 2</option>
+                                      <option value="3">Option 3</option>
+                                    </select>
+                                  </div>
+                                <div class="input-field col s8">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Nama Berkas</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">URL Postingan</label>
+                                </div>
+                                <div id="urlhosting">
+                                    
+                                    <div class='input-field col s4'>
+                                        <input id='last_name' type='text' class='validate'>
+                                        <label for='last_name'>Nama hosting</label>
+                                    </div>
+                                    <div class='input-field col s8'>
+                                        <input id='last_name' type='text' class='validate'>
+                                        <label for='last_name'>URL Hosting</label>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </form>
+            </div>
+            <div class="modal-footer">
+      <a id="tambahUrl" class="purplePI waves-effect waves-light btn left">Tambah URL</a> &nbsp; 
+      <a class="waves-effect waves-light btn"><i class="material-icons right">add_box</i> Tambah Berkas</a>
+    </div>
+    
+  </div>
+
+    </main>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/shortcut.js' %}"></script>
+
+    <script>
+        $("a.extlink").click(function(){
+           var status_id = $(this).attr('href');
+           $('#external-link').modal('open');
+           $("#external-link b").text(status_id);
+           $("#external-link a").attr("href", status_id)
+           return false;
+        });
+
+        shortcut.add("Alt+A",function() {
+            $('#tambah').modal('open');
+        });
+
+        shortcut.add("F",function() {
+            $('.cari').focus();
+        },{
+            'disable_in_input':true
+        });
+
+
+        $(document).ready(function() {
+            var inputmax = 0;
+            $('.parallax').parallax();
+            $(".button-collapse").sideNav();
+            $('ul.tabs').tabs();
+            $('.modal').modal();
+            $('select').material_select();
+
+            $(".showlink").click(function(){
+                $(".listlink").slideToggle('100');
+                $(this).find('.icons').toggleClass('fa-minus');
+            });
+
+            $('.dropdown-button').dropdown({
+              inDuration: 300,
+              outDuration: 225,
+              constrainWidth: true, // Does not change width of dropdown to that of the activator
+              hover: false, // Activate on hover
+              gutter: 0, // Spacing from edge
+              belowOrigin: true, // Displays dropdown below the button
+              alignment: 'left', // Displays dropdown with edge aligned to the left of button
+              stopPropagation: false // Stops event propagation
+            }
+          );
+
+            $("td[colspan=4]").find("p").hide();
+            $(".dropdown-button").click(function(event) {
+                event.stopPropagation();
+                var $target = $(event.target);
+                if ( $target.closest("td").attr("colspan") > 1 ) {
+                    $target.slideUp();
+                } else {
+                    $target.closest("tr").next().find("p").slideToggle();
+                }                    
+            });
+
+            $('.tooltipped').tooltip({delay: 50});
+
+            $("#tambahUrl").click(function(){
+                if (inputmax < 6){
+                    $("#urlhosting").append("<div class='input-field col s4'><input id='last_name' type='text' class='validate'><label for='last_name'>Nama hosting</label></div><div class='input-field col s8'><input id='last_name' type='text' class='validate'><label for='last_name'>URL Hosting</label></div>");
+                    inputmax++;
+                } else {
+                    Materialize.toast('Tautan unduh sudah batas maksimal', 4000);
+                }
+            });
+
+
+        });
+
+    </script>
+</body>
+
+</html>
